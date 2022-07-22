@@ -7,14 +7,15 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 	
-	Main dark background: #b30000;
+	Red: #b30000;
+	Blue: #000080;
 	Dark button hover: #a97878;
 	Dark button active: #6f0926;
 	Light button hover: rgba(237, 237, 203, 0.8);
-    Form outline (and other accents - nav text?): #EDEDCB;
-	Form outline focus: #c09f94;
-	Form input placeholder: #d6c6af;
-	Nav text: beige;
+    Form outline (and other accents - nav text?): #b30000;
+	Form outline focus: #000080;
+	Form input placeholder: #999;
+	Nav text: #ffffff;
 */
 
 /* Reset */
@@ -1967,11 +1968,11 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #b30000;
+		background: #fff;
 		border-radius: 10px;
 		border: none;
-		border: solid 2px #EDEDCB;
-		color: #fff;
+		border: solid 2px #b30000;
+		color: #000;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -1994,8 +1995,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #c09f94;
-			box-shadow: 0 0 0 1px #c09f94;
+			border-color: #000080;
+			box-shadow: 0 0 0 1px #000080;
 		}
 
 	.select-wrapper {
@@ -2034,6 +2035,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
 	}
@@ -2083,7 +2085,7 @@
 			input[type="radio"] + label:before {
 				background: rgba(144, 144, 144, 0.075);
 				border-radius: 0;
-				border: solid 1px #EDEDCB;
+				border: solid 1px #b30000;
 				content: '';
 				display: inline-block;
 				height: 1.65em;
@@ -2118,27 +2120,27 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: #d6c6af !important;
+		color: #999 !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #d6c6af !important;
+		color: #999 !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #d6c6af !important;
+		color: #999 !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #d6c6af !important;
+		color: #999 !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: #d6c6af !important;
+		color: #999 !important;
 		opacity: 1.0;
 	}
 
@@ -2163,7 +2165,7 @@
 		}
 
 		.box.person {
-			border: solid 1px #EDEDCB;
+			border: solid 1px #b30000;
 			padding: 3em 1.5em;
 		}
 
@@ -2541,7 +2543,7 @@
 		display: inline-block;
         font-family: "Crimson Text", "Garamond", serif;
 		font-size: .75em;
-		font-weight: 400;
+		font-weight: 700;
 		height: 3.75em;
 		line-height: 3.85em;
 		letter-spacing: 2px;
@@ -2683,6 +2685,31 @@
 			.button.special:active {
 				background-color: #6f0926;
 			}
+		
+		input[type="submit"].footer,
+		input[type="reset"].footer,
+		input[type="button"].footer,
+		button.footer,
+		.button.footer {
+			background-color: #ffffff;
+			color: #b30000 !important;
+		}
+
+			input[type="submit"].footer:hover,
+			input[type="reset"].footer:hover,
+			input[type="button"].footer:hover,
+			button.footer:hover,
+			.button.footer:hover {
+				background-color: #a97878;
+			}
+
+			input[type="submit"].footer:active,
+			input[type="reset"].footer:active,
+			input[type="button"].footer:active,
+			button.footer:active,
+			.button.footer:active {
+				background-color: #6f0926;
+			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
@@ -2720,7 +2747,7 @@
 	}
 
 		.subpage #header {
-			background: #b30000;
+			background: #000080;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -2864,7 +2891,7 @@
 		right: 0;
 		top: 0;
 		background: #b30000;
-		color: beige;
+		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
 		width: 20em;
@@ -2882,8 +2909,8 @@
 		}
 
 		#navPanel a:not(.close) {
-			border-top: solid 1px #EDEDCB;
-			color: beige;
+			border-top: solid 1px #b30000;
+			color: #ffffff;
 			font-weight: 700;
 			display: block;
 			padding: 0.75em 0;
@@ -2903,7 +2930,7 @@
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
-			color: beige;
+			color: #ffffff;
 			cursor: pointer;
 			display: block;
 			height: 4em;
@@ -3120,12 +3147,12 @@
 	#footer {
 		padding: 2em 0;
 		background: #b30000;
-		color: beige;
+		color: #ffffff;
 		text-align: center;
 	}
 
 		#footer h3 {
-			color: beige;
+			color: #ffffff;
 		}
 
 		#footer label {
